@@ -14,7 +14,7 @@ def handle_text(message):
     user_markup = telebot.types.ReplyKeyboardMarkup(True,False)
     user_markup.row('/start','/info')
     start_text = str('Привет, '+message.from_user.first_name+'!\nЯ бот на Heroku.')
-    bot.send_message(chat_id=1154965888, text=start_text, parse_mode='Markdown')
+    bot.send_message(message.chat.id, "Вопрос и ответы успешно зарегистрированы. Спасибо!")
 
 
 @server.route('/' + TOKEN, methods=['POST'])
