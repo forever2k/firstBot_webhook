@@ -14,7 +14,7 @@ class User:
 
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['stop'])
 def send_welcome(message):
     bot.send_message(message.from_user.id, "Приветики")
     # bot.reply_to(message, "Приветики")
