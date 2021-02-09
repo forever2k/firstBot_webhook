@@ -13,7 +13,7 @@ server = Flask(__name__)
 db = mysql.connector.connect(
         host="r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
         user="l3q6pdom2dmo7xli",
-        passwd="x5eaeixe429vuh0g",
+        passwd=os.getenv('mypass'),
         port="3306",
         database="eyefvtclr0ydnawm")
 
