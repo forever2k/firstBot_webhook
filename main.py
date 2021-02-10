@@ -10,12 +10,20 @@ bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
 
+# db = mysql.connector.connect(
+#         host=os.getenv('myhost'),
+#         user=os.getenv('myuser'),
+#         passwd=os.getenv('mypass'),
+#         port="3306",
+#         database="eyefvtclr0ydnawm")
+
 db = mysql.connector.connect(
-        host=os.getenv('myhost'),
-        user=os.getenv('myuser'),
-        passwd=os.getenv('mypass'),
+        host='r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+        user='l3q6pdom2dmo7xli',
+        passwd='x5eaeixe429vuh0g',
         port="3306",
         database="eyefvtclr0ydnawm")
+
 
 print(db)
 
