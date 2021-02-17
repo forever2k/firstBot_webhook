@@ -19,6 +19,7 @@ db = mysql.connector.connect(
 
 
 # print(db)
+# print(db)
 
 cursor = db.cursor()
 
