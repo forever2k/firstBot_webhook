@@ -9,6 +9,7 @@ bot = telebot.TeleBot(TOKEN)
 
 server = Flask(__name__)
 
+
 db = mysql.connector.connect(
         host=os.getenv('myhost'),
         user=os.getenv('myuser'),
